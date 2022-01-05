@@ -1,0 +1,116 @@
+@charset "UTF-8";
+
+#main_content {
+    width: 960px;
+    height: 15000px;
+    margin: 0 auto;
+    background: white(131, 83, 83);
+}
+
+#main_content > .main_top {
+    width: 960px;
+    height: 150px;
+    margin: 0 auto;
+}
+
+/* swiper */
+#main_content > .main_top > .swiper-container {
+    width: 100%;
+    height: 500px;
+}
+
+#main_content > .main_top > .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+#main_content > .main_top .swiper-slide.slide1 {
+    background: url(../img/main_0.png);
+    background-size: cover;
+    background-position:center;
+}
+#main_content > .main_top .swiper-slide.slide2 {
+    background: url(../img/main_02.png);
+    background-size: cover;
+    background-position:center;
+}
+#main_content > .main_top .swiper-slide.slide3 {
+    background: url(../img/main_03.png);
+    background-size: cover;
+    background-position:center;
+}
+#main_content > .main_top .swiper-slide.slide4 {
+    background: url(../img/main_1.png);
+    background-size: cover;
+    background-position:center;
+}
+
+@media screen and (max-width: 767px) {
+#main_content > .main_top .swiper-slide.slide1 {
+    background: url(../img/m_main_0.png);
+    background-size: cover;
+    background-position:center;
+}
+#main_content > .main_top .swiper-slide.slide2 {
+    background: url(../img/m_main_2.png);
+    background-size: cover;
+    background-position:center;
+}
+#main_content > .main_top .swiper-slide.slide3 {
+    background: url(../img/m_main_3.png);
+    background-size: cover;
+    background-position:center;
+    }
+#main_content > .main_top .swiper-slide.slide4 {
+    background: url(../img/m_main_1.png);
+    background-size: cover;
+    background-position:center;
+    }
+
+#main_content > .best_products {
+    width: 960px;
+    height: 150px;
+    margin: 0 auto;
+}
+
+#main_content > .best_products {
+    height: 400px;
+    margin-bottom: 20px;
+    background: #D8D8D8
+    
+}
+
+#main_content > .brand_story{
+    width: 960px;
+    height: 150px;
+    margin: 0 auto;
+}
+
+#main_content > .promotion_video {
+    width: 960px;
+    height: 150px;
+    margin: 0 auto;
+}
+
+#main_content > .faq {
+    width: 960px;
+    height: 150px;
+    margin: 0 auto;
+}
+
+}

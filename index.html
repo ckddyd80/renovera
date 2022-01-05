@@ -5,13 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./libarary/fontawesome-free-5.15.4-web/">
+    <link rel="stylesheet" href="./libarary/bootstrap-5.1.3-dist/">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
-    <heander id="main header">
+    <heander id="main_header">
         <!-- nav 메뉴 -->
         <div class="gnb_container">
             <div class="gnb menu">
                 <div class="logo">
+                    <a href="#"><img src="./img/logo.png" alt="로고"></a>
                 </div>
                 <ul class="nav">
                     <li>
@@ -60,12 +65,54 @@
         </div>
     </heander>
     <div id="main_content">
-        <section></section>
-        <section></section>
-        <section></section>
-        <section></section>
-        <section></section>
+        <section class="main_top">
+            <!-- Swiper -->
+            <div class="swiper-container swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide slide1"></div>
+                    <div class="swiper-slide slide2"></div>
+                    <div class="swiper-slide slide3"></div>
+                    <div class="swiper-slide slide4"></div>
+                </div>
+            <!-- Add Arrows -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </section>
+        <section class="best_products">
+            <h5>BEST PRODUCTS</h5>
+            <div id="products">
+
+            </div>
+        </section>
+        <section class="brand_story">
+            <h5>brand_story</h5>
+        </section>
+        <section class="promotion_video">
+            <h5>video</h5>
+        </section>
+        <section class="faq">
+            <h5>faq</h5>
+        </section>
     </div>
-    <footer></footer>
+    <footer id="main_footer">
+        <div>
+            <h5>footer</h5>
+        </div>
+    </footer>
+    <script src="./js/swiper.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper', {
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            autoplay: {
+                delay: 3000,
+            },
+            speed: 800,
+            effect: "fade"
+            });
+    </script>
 </body>
 </html>

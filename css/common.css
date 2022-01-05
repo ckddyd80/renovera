@@ -1,0 +1,78 @@
+@charset "UTF-8";
+@import url('./swiper.css');
+/* 초기화 */
+
+* {
+    margin: 0; padding: 0;
+    font-family: Arial, 'san-serif';
+}
+a { text-decoration: none !important; }
+img { border: 0; }
+ul { list-style: none; }
+
+/* 헤더 */
+
+#main_header {
+    height: 80px;
+    background: gray;
+    color: black;
+}
+
+#main_header a {
+    color: black;
+}
+
+#main_header > .gnb_container {
+    background: gray;
+    height: 80px;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+#main_header .gnb {
+    overflow: hidden;
+    position: relative;
+    height: 100%;
+    margin: 0 auto;
+
+}
+
+#main_header .logo {
+    float: left;
+    width: 550px;
+    margin-top: 20px;
+}
+
+#main_header ul.nav {
+    float: left;
+    overflow: hidden;
+    padding-left: 20px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+#main_header ul.nav > li {
+    float: left;
+    padding: 22px 17px;
+}
+
+/* 하위메뉴 */
+#main_header ul.lnb {
+    overflow: hidden;
+    margin: 0 auto;
+    display: none;
+}
+
+#main_header ul.lnb > li {
+    float: left;
+    margin: 20px 10px 0 10px;
+}
+
+
+/* 푸터 */
+
+#main_footer {
+    height: 150px;
+    background: rgb(248, 10, 10);
+}

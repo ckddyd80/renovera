@@ -12,7 +12,7 @@
 
 #main_content > #main_top {
     width: 100%;
-    height: 850px;
+    height: 950px;
     margin: 0 auto;
 }
 
@@ -64,60 +64,108 @@
 }
 
 #main_content > #best_products > .best_background {
-    background: url('../img/marble-6202876_960_720.jpg');
+    background: #5c9b86;
     background-size: cover;
     background-position:center;
     width: 100%;
-    height: 600px;
+    height: 500px;
 }
 
 #main_content > #best_products > .sub_img {
     height: 300px;
 } 
 
-#main_content > #best_products > .sub_img > .sub_img_sub {
+#main_content > #best_products > .best_background >.sub_img > .sub_img_sub {
+    cursor: pointer;
 }
 
-#main_content > #best_products > .sub_img > .sub_img_sub1 {
-    background: url('../img/720X720 (1).jpg');
+#main_content > #best_products > .best_background > .sub_img > .sub_img_sub1 {
+    background:url(../img/violatricolor.jpg);
     background-size: cover;
     background-position:center;
     width: 300px;
     height: 300px;
     border-radius: 50%;
     float: left;
-    border: solid 2px rgb(243, 211, 211);
+    border: solid 2px rgb(141, 136, 136);
+    margin-top: 100px;
+    margin-left: 300px;
+    /* text-align: center;
+    line-height: 300px; */
+    font-weight: bold;
+    font-size: 14px;
+    color: salmon;
 }
 
-#main_content > #best_products > .sub_img > .sub_img_sub2 {
-    background: url('../img/12637814_1\ \(1\).jpg');
+#main_content > #best_products > .best_background > .sub_img > .sub_img_sub1 >.top {
+    background-color: rgb(230, 161, 14);
     background-size: cover;
-    background-position:center;
-    width: 300px;
-    height: 300px;
+    color: salmon;
+    right: 100%;
+    width: 100px;
+    padding: 50px;
+    border: 1px solid black;
+    margin: 10px;
+    margin-right: 15px;
+    padding-right: 15px;
     border-radius: 50%;
-    float: left;
-    border: solid 2px rgb(243, 211, 211);
 }
-#main_content > #best_products > .sub_img > .sub_img_sub3 {
-    background: url('../img/720X720.jpg');
-    background-size: cover;
-    background-position:center;
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    float: left;
-    border: solid 2px rgb(243, 211, 211);
+
+#main_content > #best_products > .best_background > .sub_img > .sub_img_sub1 >.name {
+    text-align: center;
+    line-height: 300px;
 }
-#main_content > #best_products > .sub_img > .sub_img_sub4 {
-    background: url('../img/LI1338780274_6_4.jpg');
+
+#main_content > #best_products > .best_background > .sub_img > .sub_img_sub2 {
+    background: url('../img/christmasrose.jpg');
     background-size: cover;
     background-position:center;
     width: 300px;
     height: 300px;
     border-radius: 50%;
     float: left;
-    border: solid 2px rgb(243, 211, 211);
+    border: solid 2px rgb(141, 136, 136);
+    margin-top: 150px;
+    margin-left: 100px;
+    /* text-align: center;
+    line-height: 300px; */
+    font-weight: bold;
+    font-size: 2em;
+    color: rgb(230, 161, 14);
+}
+#main_content > #best_products > .best_background >  .sub_img > .sub_img_sub3 {
+    background: url('../img/ahappyday.jpg');
+    background-size: cover;
+    background-position:center;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    float: left;
+    border: solid 2px rgb(141, 136, 136);
+    margin-top: 100px;
+    margin-left: 100px;
+    /* text-align: center;
+    line-height: 300px; */
+    font-weight: bold;
+    font-size: 2em;
+    color: salmon;
+}
+#main_content > #best_products > .best_background > .sub_img > .sub_img_sub4 {
+    background: url('../img/rosal.jpg');
+    background-size: cover;
+    background-position:center;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    float: left;
+    border: solid 2px rgb(141, 136, 136);
+    margin-top: 150px;
+    margin-left: 100px;
+    /* text-align: center;
+    line-height: 300px; */
+    font-weight: bold;
+    font-size: 2em;
+    color: rgb(230, 161, 14);
 }
 
 #main_content > #brand_story {

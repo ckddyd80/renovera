@@ -7,6 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/jquery.mb.YTPlayer.min.css" media="all" type="text/css">
     <!-- <link rel="stylesheet" href="./libarary/bootstrap-5.1.3-dist/css/bootstrap.css"> -->
     <!-- <link rel="stylesheet" href="./libarary/fontawesome-free-5.15.4-web/css/all.min.css"> -->
 </head>
@@ -64,6 +65,7 @@
             </div>
         </div>
     </header>
+    <!-- 메인배너_스와이퍼 -->
     <content id="main_content">
         <section id="main_top">
             <!-- Swiper1 -->
@@ -79,28 +81,46 @@
             <div class="swiper-button-prev"></div>
             </div>
         </section>
+        <!-- best products -->
         <section id="best_products">
             <div class="best_background">
                 <div class="sub_img">
                     <div class="sub_img_sub sub_img_sub1">
-                        <span class="top">추천상품</span>
-                        <span class="name">Viola_Tricolor</span>
+                        <div class="top_parent">
+                            <span class="top">추천상품</span>
+                        </div>
+                        <div class="name">
+                            <p>Viola_Tricolor</p>
+                        </div>
                     </div>
                     <div class="sub_img_sub sub_img_sub2">
-                        <span class="top">인기상품</span>
-                        <span class="name">Christmas_Rose</span>
+                        <div class="top_parent">
+                            <span class="top">인기상품</span>
+                        </div>
+                        <div class="name">
+                            <p>Christmas_Rose</p>
+                        </div>
                     </div>
                     <div class="sub_img_sub sub_img_sub3">
-                        <span class="top">MD추천</span>
-                        <span class="name">A Happy_Day</span>
+                        <div class="top_parent">
+                            <span class="top">MD추천</span>
+                        </div>
+                        <div class="name">
+                            <p>A Happy_Day</p>
+                        </div>
                     </div>
                     <div class="sub_img_sub sub_img_sub4">
-                        <span class="top">상품보기</span>
-                        <span class="name">Rosa_L</apan>
+                        <div class="top_parent">
+                            <span class="top">상품보기</span>
+                        </div>
+                        <div class="name">
+                            <p>Rosa_L</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
+        <!-- brand story -->
         <section id="brand_story">
                 <div>
                     <h1 class="brand_top">BRAND STORY</h1>
@@ -117,23 +137,26 @@
                     <a href="#"><img src="./img/button.PNG"></a>
                 </div>
                 <div class="brand_img">
-                    <a href="#"><img src="./img/renovera2.jpg"></a>
                 </div>                
         </section>
+        <!-- promotion video -->
         <section id="promotion_video">
             <div class="video">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/XGz4xnZxIHc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div id="bgndVideo" class="player" data-property="{videoURL:'https://youtu.be/XGz4xnZxIHc',containment:'body',autoPlay:true, mute:true, startAt:0, opacity:1}">My video</div>
             </div>
         </section>
         <section id="faq">
             <div class="faq_background"></div>
         </section>
     </content>
+    <!-- 푸터 -->
     <footer id="main_footer">
 
     </footer>
 
     <script src="./js/swiper.min.js"></script>
     <script src="./js/main.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+    <script src="./js/jquery.mb.YTPlayer.min.js"></script>
 </body>
 </html>

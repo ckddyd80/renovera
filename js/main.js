@@ -9,6 +9,7 @@ var swiper = new Swiper('.swiper', {
     speed: 800,
 });
 
-jQuery(function(){
-    jQuery("#[playerID]").YTPlayer();
+$(function(){
+    jQuery("#P1").YTPlayer()
 });
+var

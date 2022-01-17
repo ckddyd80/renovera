@@ -9,7 +9,11 @@ var swiper = new Swiper('.swiper', {
     speed: 800,
 });
 
-$(function(){
-    jQuery("#P1").YTPlayer()
+// $(function(){
+//     jQuery("#P1").YTPlayer()
+// });
+
+
+jQuery(function(){
+    jQuery("#P1").YTPlayer();
 });
-var

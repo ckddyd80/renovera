@@ -250,40 +250,151 @@
 /* promotion video */
 
 #main_content > #promotion_video {
-    width: 100vw;
+    /* width: 100vw;
     height:100vh;
     padding:0;
     margin:0;
     overflow: hidden;
+    position: relative; */
+    background-color: #d1cdd0;
+    background-size: cover;
+    background-position:center;
     position: relative;
-}
-#main_content > #promotion_video > .video > #p1 {
-    
-    position: absolute;
+    height: 0;
+    padding-bottom: 56.25%;
+    overflow: hidden;
     width: 100%;
-    height: 600px;
-    /* padding-bottom: 56.25%; */
+    height: 506px;
+    margin: 0;
+    padding: 0;
 }
-
-/* #main_content > #promotion_video > .video iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+#main_content > #promotion_video > .video {  
+    /* position: absolute;
     width: 100%;
     height: 100%;
-} */
+    padding-bottom: 56.25%; */
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 0%;
+}
+
+#main_content > #promotion_video > .video > .video_you {
+    margin: 0 auto;
+}
 
 /* faq */
 
 #main_content > #faq {
-    background: url('../img/FAQ.PNG');
+    background: url('../img/background01.PNG');
     background-size: cover;
     background-position:center;
     width: 100%;
-    height: 600px;
+    height: 500px;
+    margin: 0;
+    padding: 0;
+    display: block;
 }
+
+#main_content > #faq > .faq_background {
+    overflow: hidden;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+#main_content > #faq > .faq_background .main_faq > h1 {
+    text-align: center;
+    line-height: 200px;
+    font-size: 40px;
+    font-weight: 900;
+}
+
+#main_content > #faq > .faq_background .faq_1 {
+    width: 30%;
+    float: left;
+    left: 300px;
+    margin: 10px;
+    padding: 10px;
+}
+
+#main_content > #faq > .faq_background .faq_1 > h1 {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+#main_content > #faq > .faq_background .faq_1 > p {
+    font-size: 15px;
+    font-weight: 400;
+}
+
+#main_content > #faq > .faq_background .faq_1 > h2 {
+    font-size: 17px;
+    font-weight: 700;
+}
+
+#main_content > #faq > .faq_background .faq_2 {
+    width: 30%;
+    float: left;
+    left: 30px;
+    margin: 10px;
+    padding: 10px;
+}
+
+#main_content > #faq > .faq_background .faq_2 > h1 {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+#main_content > #faq > .faq_background .faq_2 > p {
+    font-size: 15px;
+    font-weight: 400;
+}
+
+#main_content > #faq > .faq_background .faq_2 > h2 {
+    font-size: 17px;
+    font-weight: 700;
+}
+
+#main_content > #faq > .faq_background .faq_3 {
+    width: 30%;
+    float: left;
+    left: 30px;
+    margin: 10px;
+    padding: 10px;
+}
+
+#main_content > #faq > .faq_background .faq_3 > h1 {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+#main_content > #faq > .faq_background .faq_3 > p {
+    font-size: 15px;
+    font-weight: 400;
+}
+
+#main_content > #faq > .faq_background .faq_3 > h2 {
+    font-size: 17px;
+    font-weight: 700;
+}
+
+#main_content > #main_bar {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 150px;
+    overflow: hidden;
+}
+
+#main_content > #main_bar .text {
+    float: left;
+}
+
+
+
 
 /* 미디어커리_모바일 */
 

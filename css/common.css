@@ -15,11 +15,22 @@ ul { list-style: none; }
 #main_header {
     height: 80px;
     background: gray;
-    color: black;
+    color: rgb(173, 162, 162);
 }
 
 #main_header a {
     color: black;
+}
+
+#main_header > #gnb_sub_container {
+    height: 100px;
+    width: 40%;
+    background: gray;
+    position: relative;
+    z-index: 2;
+    display: none;
+    position: absolute;
+    left: 600px;
 }
 
 #main_header > .gnb_container {
@@ -30,22 +41,21 @@ ul { list-style: none; }
     z-index: 1;
 }
 
-#main_header .gnb {
-    overflow: hidden;
+#main_header > .gnb_container > .gnb_menu  {
     position: relative;
-    height: 100%;
-    margin: 0 auto;
-
 }
 
 #main_header .logo {
     float: left;
-    width: 550px;
+    position: absolute;
     margin-top: 20px;
+    left: 80px;
 }
 
 #main_header ul.nav {
     float: left;
+    position: absolute;
+    left: 600px;
     overflow: hidden;
     padding-left: 20px;
     margin-top: 10px;
@@ -57,25 +67,88 @@ ul { list-style: none; }
     padding: 22px 17px;
 }
 
-/* 하위메뉴 */
-#main_header ul.lnb {
-    overflow: hidden;
-    margin: 0 auto;
+#main_header > .gnb_container > .gnb_menu .setting {
+    float: right;
+    width: 170px;
+    text-align:left;
+    padding-top: 25px;
+    font-size: 22px;
+    padding-right: 40px;
+}
+
+#main_header .trigger {
+    float: right;
+    width: 23px;
+    text-align:right;
+    padding-top: 4px;
     display: none;
 }
 
-#main_header ul.lnb > li {
+#main_header .trigger .close {
+    display: none;
+}
+
+/* 하위메뉴 */
+#main_header > ul.lnb {
+    float: left;
+    overflow: hidden;
+    margin: 0 auto;
+    display: none;
+    padding-left: 20px;
+}
+
+#main_header > ul.lnb > li {
     float: left;
     margin: 20px 10px 0 10px;
+    padding: 22px 17px;
+}
+
+.show {
+    display: block;
+}
+
+.hide {
+    display: none;
+}
+
+.appear {
+    animation: fade-in 0.5s;
+}
+
+.disappear {
+    animation: fade-out 0.5s;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fade-out {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
 }
 
 
 /* 푸터 */
 
 #main_footer {
-    height: 200px;
+    height: 270px;
     background: rgb(248, 246, 246);
     overflow: hidden;
+}
+
+#main_footer  .main_p {
+    font-weight: bold;
+    font-size: 24px;
 }
 
 #main_footer > .contact {

@@ -14,6 +14,7 @@
     width: 100%;
     height: 950px;
     margin: 0 auto;
+    padding: 0 auto;
 }
 
 /* swiper */
@@ -73,6 +74,11 @@
 }
 
 /* best products */
+#main_content > #best_products {
+    margin: 0 auto;
+    padding: 0 auto;
+}
+
 #main_content > #best_products .sub_img {
     overflow: hidden;
 } 
@@ -305,17 +311,23 @@
     position: relative;
 }
 
-#main_content > #faq > .faq_background .main_faq > h1 {
+#main_content > #faq > .faq_background > h1 {
     text-align: center;
     line-height: 200px;
     font-size: 40px;
     font-weight: 900;
 }
 
+#main_content > #faq > .faq_background > .main_faq {
+    width: 75%;
+    margin: 0 auto;
+}
+
+
 #main_content > #faq > .faq_background .faq_1 {
-    width: 30%;
+    width: 450px;
     float: left;
-    left: 300px;
+    left: 30px;
     margin: 10px;
     padding: 10px;
 }
@@ -336,7 +348,7 @@
 }
 
 #main_content > #faq > .faq_background .faq_2 {
-    width: 30%;
+    width: 450px;
     float: left;
     left: 30px;
     margin: 10px;
@@ -359,11 +371,15 @@
 }
 
 #main_content > #faq > .faq_background .faq_3 {
-    width: 30%;
+    width: 450px;
     float: left;
     left: 30px;
     margin: 10px;
     padding: 10px;
+    /* display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; */
 }
 
 #main_content > #faq > .faq_background .faq_3 > h1 {
@@ -375,24 +391,47 @@
     font-size: 15px;
     font-weight: 400;
 }
-
 #main_content > #faq > .faq_background .faq_3 > h2 {
     font-size: 17px;
     font-weight: 700;
 }
 
 #main_content > #main_bar {
-    margin: 0;
-    padding: 0;
     width: 100%;
-    height: 150px;
+    height: 80px;
+    position: relative;
+    z-index: 1;
+    color: black;
+}
+
+#main_content > #main_bar a {
+    color: black;
+}
+
+#main_content > #main_bar > .bar_menu {
     overflow: hidden;
+    position: relative;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 auto;
+    line-height: 60px;
 }
 
-#main_content > #main_bar .text {
+
+#main_content > #main_bar .bar_menu > .text > li {
     float: left;
+    overflow: hidden;
+    padding-left: 20px;
+    margin-top: 12px;
 }
 
+#main_content > #main_bar .bar_menu > .sns_icon {
+    float: right;
+    overflow: hidden;
+    text-align:right;
+    margin-right: 40px;
+    right: 25px;
+}
 
 
 

@@ -110,22 +110,7 @@
     margin: 0 0 0 0;
     position: absolute;
     float: left;
-    /* left: 300px; */
-    /* transition-property: background-color;
-    transition-duration: 1s;
-    transition-timing-function: ease-out; */
-
 }
-
-/* #main_content > #best_products > .best_background >.sub_img > .sub_img_sub:hover {
-    background: rgba(41, 204, 155, 0.3);
-    transition: background 1s ease-out;
-    width: 400px;
-    height: 400px;
-    border-radius: 50%;
-    border: none;
-} */
-
 #main_content > #best_products > .best_background > .sub_img > .sub_img_sub1 {
     background:url(../img/violatricolor.jpg) no-repeat center/cover;
     background-size: cover;
@@ -170,20 +155,14 @@
     width:100%;
     height:100%;
     margin: 0 0 0 0;
-    /*마우스가 빠졌을 때에도 서서히 변하기 위해 div에도 변형 속성을 줍니다*/
-    /*배경색 변형 선언*/
     transition-property: background-color;
-    /*변형 완료 1초*/
     transition-duration: 1s;
-    /*빠른 시작 서서히 감속*/
     transition-timing-function: ease-out;
     border-radius: 50%;
 }
 
 #main_content > #best_products > .best_background > .sub_img  .name:hover {
-    /*rgb컬러a알파 0~1까지 화이트 0.3만큼 알파 혹은 반투명*/
     background: rgba(41, 204, 155, 0.3);
-    /* 변형할 것은 배경 1초, 빠른 시작 서서히 감속*/
     transition: background 1s ease-out;
 }
 
@@ -316,12 +295,6 @@
 }
 
 #main_content > #promotion_video {
-    /* width: 100vw;
-    height:100vh;
-    padding:0;
-    margin:0;
-    overflow: hidden;
-    position: relative; */
     background-color: #d1cdd0;
     background-size: cover;
     background-position:center;
@@ -335,10 +308,6 @@
     padding: 0;
 }
 #main_content > #promotion_video > .video {  
-    /* position: absolute;
-    width: 100%;
-    height: 100%;
-    padding-bottom: 56.25%; */
     position: absolute;
     width: 100%;
     height: 100%;
@@ -364,7 +333,7 @@
     background-size: cover;
     background-position:center;
     width: 100%;
-    height: 500px;
+    /* height: 300px; */
     margin: 0;
     padding: 0;
     display: block;
@@ -380,13 +349,14 @@
 
 #main_content > #faq > .faq_background > h1 {
     text-align: center;
-    line-height: 200px;
     font-size: 40px;
     font-weight: 900;
+    margin-bottom: 15px;
 }
 
 #main_content > #faq > .faq_background > .main_faq {
     width: 75%;
+    margin-top: 30px;
     margin: 0 auto;
     display: flex;
     justify-content: center;
@@ -394,10 +364,10 @@
 
 
 #main_content > #faq > .faq_background .faq_1 {
-    width: 450px;
+    width: 367px;
     left: 30px;
     margin: 10px;
-    padding: 10px;
+    /* padding: 10px; */
 }
 
 #main_content > #faq > .faq_background .faq_1 > h1 {
@@ -416,10 +386,10 @@
 }
 
 #main_content > #faq > .faq_background .faq_2 {
-    width: 450px;
+    width: 367px;
     left: 30px;
     margin: 10px;
-    padding: 10px;
+    /* padding: 10px; */
 }
 
 #main_content > #faq > .faq_background .faq_2 > h1 {
@@ -438,14 +408,10 @@
 }
 
 #main_content > #faq > .faq_background .faq_3 {
-    width: 450px;
+    width: 367px;
     left: 30px;
     margin: 10px;
-    padding: 10px;
-    /* display: block;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis; */
+
 }
 
 #main_content > #faq > .faq_background .faq_3 > h1 {
@@ -491,12 +457,30 @@
     margin-top: 12px;
 }
 
+#main_content > #main_bar .bar_menu > .text > li > a {
+    /* line-height: 5px; */
+}
+
+#main_content > #main_bar .bar_menu > .text > li > a:after {
+    display: block;
+    content: '';
+    border-bottom: solid 2px gray;
+    transform: scaleX(0);
+    transition: transform 250ms ease-in-out;
+    margin-top: -12px;
+}
+#main_content > #main_bar .bar_menu > .text > li > a:hover:after {
+    transform: scaleX(1);
+    line-height: 5px;
+}
+
 #main_content > #main_bar .bar_menu > .sns_icon {
     float: right;
     overflow: hidden;
     text-align:right;
     margin-right: 40px;
     right: 25px;
+    margin-top: 12px;
 }
 
 
@@ -504,41 +488,81 @@
 /* 미디어커리 */
 
 @media screen and (max-width: 767px) {
-    #main_content > section {
+    #main_content {
         width: 100%; 
     }
-    #main_content > section > div {
-        width: 100%; 
-        float: none;
-        text-align: center;
+    #main_content > #brand_story {
+        height: 1200px;
     }
-    #main_content > section > #best_products > .best_background > .sub_img {
+    #main_content > #brand_story div {
         width: 100%;
-        float: none;
-        text-align: center;
+        text-align: left;
+        padding: 0;
+        margin: 0;
     }
-    #main_content > section > h1 {
-        width: 100%; 
-        float: none;
-        text-align: center;
+    #main_content > #brand_story div .brand_top {
+        left: 30px;
+        width: 400px;
+        text-align: left;
+        font-size: 25px;
+        font-weight: 900;
+
     }
-    #main_content > section > div > span {
-        width: 100%; 
+    #main_content > #brand_story div p {
+        left: 30px;
+        text-align: left;
+        width: 400px;
+        font-weight: 400;
+        font-size: 16px;
     }
-    #main_content > section > div > p {
-        width: 100%; 
-        float: none;
-        text-align: center;
+    #main_content > #brand_story div a {
+        width: 400px;
+        left: 150px;
     }
-    #main_content > section > div > a {
-        width: 100%; 
+    #main_content > #brand_story .brand_img {
+        width: 100%
     }
-    #main_content > section > div > h2 {
-        width: 100%; 
+    #main_content > #promotion_video {
+        width: 100%;
     }
-    /* #main_content > section > div > a {
-        width: 100%; 
-    } */
+    #main_content > #promotion_video > .video {
+        width: 100%;
+    }
+
+    #main_content > #faq {
+        margin: 0;
+        height: 630px;
+        display: flex;
+    }
+    #main_content > #faq > .faq_background {
+        margin: 0 auto;
+        display: flex;
+        /* flex-wrap: wrap; */
+        gap: 1em;
+        flex-direction: column;
+        /* flex-basis:100%; */
+    }
+    #main_content > #faq > .faq_background .main_faq {
+        margin: 0 auto;
+        /* height: 40px; */
+        display: flex;
+        /* flex-wrap: wrap; */
+        gap: 1em;
+        flex-direction: column;
+    }
+
+
+    #main_content > #faq > .faq_background .main_faq .faq_1 {
+        flex-direction: column;
+        }
+    #main_content > #faq > .faq_background .main_faq.faq_2 {
+        height: 80px;
+        flex-direction: column;
+    }    
+    #main_content > #faq > .faq_background .main_faq.faq_3 {
+        height: 80px;
+        flex-direction: column;
+    }
 
     #main_content > #main_top .swiper-slide.slide1 {
         background: url('../img/m_main_0.png');
@@ -561,16 +585,33 @@
         background-position:center;
         }
 
-}
-
 @media screen and (min-width: 768px) and (max-width: 1023px){
-    #main_content > div {
+    #main_content {
         width: 100%; 
     }
-
-    #main_content > #main_container > section {
-        width: calc(100% - 210px);
+    #main_content > #best_products {
+        width: 100%;
     }
+    #main_content > #best_products .best_background {
+        
+    }
+    #main_content > #best_products .best_background > .sub_img {
+
+    }
+    #main_content > #best_products > .best_background >  .sub_img > .sub_img_sub1 {
+
+    }
+    #main_content > #best_products > .best_background >  .sub_img > .sub_img_sub2 {
+        
+    }
+    #main_content > #best_products > .best_background >  .sub_img > .sub_img_sub3 {
+        
+    }
+
+    /* #main_content > #main_container > section {
+        width: calc(100% - 210px);
+    } */
 }
 
 @media screen and (min-width: 1024px) {}
+}

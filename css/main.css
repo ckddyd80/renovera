@@ -215,9 +215,9 @@
 }
 
 #main_content > #brand_story > div {
-    overflow: hidden;
+    /* overflow: hidden; */
     float: left;
-    width: 38%;
+    width: 36%;
     height: 600px;
     padding-top: 15px;
     box-sizing: border-box;
@@ -226,31 +226,31 @@
 
 #main_content > #brand_story .brand_top {
     position: relative;
-    left: 80px;
+    left: 30px;
     top: 100px;
     font-size: 36px;
     font-weight: 900;
-    width: 50%;
+    width: 100%;
 }
 
 #main_content > #brand_story > div > p {
     position: relative;
-    left: 80px;
+    left: 30px;
     top: 140px;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 600;
 }
 
 #main_content > #brand_story > div > a {
     position: relative;
-    left: 80px;
+    left: 140px;
     top: 140px;
 }
 
 #main_content > #brand_story > .brand_img {
     overflow: hidden;
-    float: left;
-    width: 62%; 
+    float: right;
+    width: 56%; 
     background:url(../img/renovera2.jpg);
     background-size: cover;
     background-position:center;
@@ -564,6 +564,43 @@
     }
 }
 
+@media screen and (min-width: 768px) and (max-width: 978px) {
+    #main_content {
+        width: 100%; 
+    }
+    #main_content > #brand_story {
+        height: 300px;
+    }
+    #main_content > #brand_story div {
+        width: 40%;
+        text-align: left;
+        padding: 0;
+        margin: 0;
+    }
+    #main_content > #brand_story div .brand_top {
+        left: 30px;
+        width: 200px;
+        text-align: left;
+        font-size: 20px;
+        font-weight: 900;
+
+    }
+    #main_content > #brand_story div p {
+        left: 30px;
+        text-align: left;
+        width: 200px;
+        /* font-weight: 400; */
+        font-size: 10px;
+    }
+    #main_content > #brand_story > div > a {
+        width: 200px;
+        left: 10px;
+    }
+    #main_content > #brand_story .brand_img {
+        width: 40%
+    }
+}
+
 @media screen and (min-width: 768px) and (max-width: 1023px){
     #main_content {
         width: 100%; 
@@ -602,7 +639,9 @@
     }
     #main_content > #best_products .best_background > .sub_img {
         width: 100%;
-        height: 200px;
+    }
+    #main_content > #best_products > .best_background > .sub_img  .name {
+        line-height: 200px;
     }
     #main_content > #best_products > .best_background >  .sub_img > .sub_img_sub1 {
         width: 200px;
@@ -655,7 +694,7 @@
     #main_content > #brand_story div p {
         left: 20px;
         text-align: left;
-        width: 400px;
+        width: 90%;
         font-weight: 400;
         font-size: 16px;
     }
@@ -665,12 +704,65 @@
     }
     #main_content > #brand_story .brand_img {
         width: 58%;
-
-
-    /* #main_content > #main_container > section {
-        width: calc(100% - 210px);
-    } */
 }
+    #main_content > #promotion_video {
+        width: 100%;
+
+    }
+    #main_content > #promotion_video .video_you {
+        background: url('../img/renovera2.jpg');
+        background-size: cover;
+        background-position:center;
+    }
+
+    @media screen and (min-width: 1024px) and (max-width: 1217px){
+        #main_content {
+            width: 100%; 
+    }
+    #main_content > #best_products {
+        width: 100%;
+    }
+    #main_content > #best_products .best_background {
+        width: 100%;
+        height: 360px;
+    }
+    #main_content > #best_products .best_background > .sub_img {
+        width: 100%;
+    }
+    #main_content > #best_products > .best_background > .sub_img  .name {
+        line-height: 200px;
+    }
+    #main_content > #best_products > .best_background >  .sub_img > .sub_img_sub1 {
+        width: 320px;
+        height: 300px;
+        float: left;
+        margin-top: 60px;
+        margin-left: 60px;
+    }
+    #main_content > #best_products > .best_background >  .sub_img > .sub_img_sub2 {
+        width: 320px;
+        height: 300px;
+        float: left;
+        margin-top: 100px;
+        margin-left: 10px;
+        left: 290px;
+    }
+    #main_content > #best_products > .best_background >  .sub_img > .sub_img_sub3 {
+        width: 320px;
+        height: 300px;
+        float: left;
+        margin-top: 60px;
+        margin-left: 10px;
+        left: 530px;
+    }
+    #main_content > #best_products > .best_background >  .sub_img > .sub_img_sub4 {
+        width: 320px;
+        height: 300px;
+        float: left;
+        margin-top: 100px;
+        margin-left: 10px;
+        left: 770px;
+    }
 
 @media screen and (min-width: 1024px) {
     #main_content {
@@ -749,34 +841,33 @@
     }
     #main_content > #brand_story {
         height: 600px;
+        overflow: hidden;
+        width: 100%;
     }
-    #main_content > #brand_story div {
-        width: 42%;
-        text-align: left;
-        padding: 0;
-        margin: 0;
+    #main_content > #brand_story > div {
+        float: left;
+        /* overflow: hidden; */
+        width: 38%;
+        height: 600px;
+        padding-top: 15px;
     }
-    #main_content > #brand_story div .brand_top {
+    #main_content > #brand_story .brand_top {
+        position: relative;
         left: 20px;
-        width: 400px;
-        text-align: left;
-        font-size: 25px;
-        font-weight: 900;
-
+        top: 80px;
     }
-    #main_content > #brand_story div p {
+    #main_content > #brand_story > div > p {
         left: 20px;
-        text-align: left;
-        width: 400px;
-        font-weight: 400;
-        font-size: 16px;
+        top: 120px;
+        font-weight: 600;
+        font-size: 13px;
     }
-    #main_content > #brand_story div a {
-        width: 400px;
-        left: 120px;
+    #main_content > #brand_story > div > a {
+        left: 100px;
     }
-    #main_content > #brand_story .brand_img {
-        width: 58%;
+    #main_content > #brand_story > .brand_img {
+        float: right;
+        width: 56%;
     }
 }
 }

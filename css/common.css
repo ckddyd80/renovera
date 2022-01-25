@@ -44,7 +44,6 @@ ul { list-style: none; }
     position: absolute;
     left: 550px;
     overflow: hidden;
-
 }
 
 #main_header > #gnb_sub_container > .lnb {
@@ -68,16 +67,17 @@ ul { list-style: none; }
 #main_header ul.nav {
     float: left;
     position: absolute;
-    left: 500px;
+    left: 800px;
     overflow: hidden;
-    padding-left: 20px;
+    padding-left: 10px;
     margin-top: 10px;
     font-weight: bold;
 }
 
 #main_header ul.nav > li {
     float: left;
-    padding: 22px 52px;
+    left: 500px;
+    padding: 22px 17px;
 }
 
 #main_header ul.nav > li > a {
@@ -172,45 +172,41 @@ ul { list-style: none; }
 /* 푸터 */
 
 #main_footer {
-    height: 200px;
+    height: 170px;
     background: rgb(248, 246, 246);
     overflow: hidden;
 }
 
-#main_footer  .main_p {
-    font-weight: bold;
-    font-size: 24px;
-}
-
 #main_footer > .contact {
-    width: 25%;
+    width: 23%;
     float: left;
-    left: 30px;
+    left: 20px;
     margin: 10px;
     padding: 10px;
-    font-size: 15px;
+    font-size: 13px;
     font-weight: 400;
     border-right: 1px solid rgb(192, 188, 188);
 }
 
 #main_footer > .company {
-    width: 40%;
+    width: 38%;
     float: left;
-    left: 30px;
+    left: 20px;
     margin: 10px;
-    padding: 10px;
-    font-size: 15px;
+    padding: 5px;
+    font-size: 13px;
     font-weight: 400;
     border-right: 1px solid rgb(192, 188, 188);
 }
 
 #main_footer > .mall {
-    width: 25%;
+    width: 23%;
     float: left;
-    left: 30px;
+    left: 20px;
     margin: 10px;
-    padding: 10px;
-    font-size: 15px;
+    padding: 5px;
+    font-size: 13px;
+
     font-weight: 400;
 }
 
@@ -257,17 +253,21 @@ ul { list-style: none; }
         display: block;
     }
 
-    #main_header > #search_box > div#search_bar {
-        width: 85vw;
-    }
+    #main_footer {
+        margin: 0;
+        height: 600px;
+        display: flex;
 
-    #main_header > #search_box > div#current_location {
-        width: 85vw;
     }
+    #main_footer .contact {
+        flex-direction: column;
 
-    #main_footer > div:nth-child(2) > div {
-        font-size: 11px;
-        text-align: left;
+    }
+    #main_footer .company {
+        flex-direction: column;
+    }
+    #main_footer .mall {
+        flex-direction: column;
     }
 }
 
@@ -280,20 +280,83 @@ ul { list-style: none; }
     #main_header .gnb, .lnb {
         width: 90vw;
     }
-
-    #main_header > #search_box > div#search_bar {
-        width: 85vw;
+    #main_header ul.nav { 
+        display: none;
     }
 
-    #main_footer > div:nth-child(2) > div {
-        font-size: 12px;
+    #main_header .setting {
+        display: none;
     }
+
+    #main_header .trigger {
+        display: block;
+    }
+    
 }
 
 @media screen and (min-width: 1024px) { 
     #main_header {
         background: url("../img/1024x450.jpg");
         background-size: cover;
+    }
+
+    #main_header .logo {
+        float: left;
+        position: absolute;
+        margin-top: 20px;
+        left: 4px;
+    }
+    #main_header ul.nav {
+        float: left;
+        position: absolute;
+        left: 280px;
+        overflow: hidden;
+        padding-left: 20px;
+        margin-top: 4px;
+        font-weight: bold;
+    }
+    #main_header ul.nav > li {
+        float: left;
+        left: 200px;
+        padding: 22px 22px;
+    }
+
+    #main_header > ul.lnb {
+        float: left;
+        overflow: hidden;
+        margin: 0 auto;
+        padding-left: 10px;
+        position: absolute;
+        margin-top: 10px;
+    }
+    #main_header > .gnb_container > .gnb_menu .setting {
+        float: right;
+        width: 140px;
+        padding-top: 28px;
+        font-size: 22px;
+        /* padding-right: 10px; */
+    }
+    #main_header > .gnb_container {
+        background: rgb(253, 223, 223, 0.3);
+        height: 80px;
+        width: 100%;
+        position: relative;
+        z-index: 1;
+    }
+        
+    #main_header > #gnb_sub_container {
+        height: 100px;
+        width: 60%;
+        background: rgb(253, 223, 223, 0.3);
+        position: relative;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        z-index: 2;
+            /* display: none; */
+        position: absolute;
+        left: 420px;
+        overflow: hidden;
     }
 
     /* #main_header .gnb, .lnb {

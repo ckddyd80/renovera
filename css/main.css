@@ -436,10 +436,6 @@
     margin-top: 12px;
 }
 
-#main_content > #main_bar .bar_menu > .text > li > a {
-    /* line-height: 5px; */
-}
-
 #main_content > #main_bar .bar_menu > .text > li > a:after {
     display: block;
     content: '';
@@ -870,4 +866,5 @@
         width: 56%;
     }
 }
+    }
 }
